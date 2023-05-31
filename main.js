@@ -1,7 +1,7 @@
 noseX=0;
 noseY=0;
 function preload() {
-
+clown_nose = loadImage('https://i.postimg.cc/W3xhPbYF/476-4761771-circle-hd-png-download.jpg')
 }
 
 function setup() {
@@ -21,9 +21,8 @@ function modelLoaded() {
 
 function draw() {
  image(video, 0, 0, 300, 300);
- fill(255, 0, 0);
- stroke(255, 0, 0,);
- circle(noseX, noseY, 20);
+
+ image(clown_nose, noseX, noseY, 30, 30);
 }
 function take_snapshot(){
     save('myFilterImage.png')
